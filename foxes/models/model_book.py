@@ -142,6 +142,9 @@ class ModelBook:
         self.turbine_types["IWT7.5MW"] = fm.turbine_types.PCtFile(
             "IWT-7d5MW-D164-H100.csv", rho=1.225
         )
+        self.turbine_types["Optimus20MW"] = fm.turbine_types.PCtFile(
+            "Optimus-20MW-D295-H160.csv", rho=1.225
+        )
         if Pct_file is not None:
             self.turbine_types["Pct"] = fm.turbine_types.PCtFile(Pct_file)
 
